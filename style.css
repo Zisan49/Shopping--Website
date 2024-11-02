@@ -1,0 +1,553 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+ }
+ header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color:#FCEED5 ;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10%;
+    box-shadow: 0px 4px 15px rgb(0,0,0, 8%);
+    transition: all .42s;
+ }
+ .logo img{
+    max-width: 100%;
+    width: 270px;
+    height: auto;
+    margin-left: -130px;
+ }
+ .navber{
+    display: flex;
+    align-items: center;
+    
+ }
+ .navber a{
+    color: #003459;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0px 25px;
+    padding: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all .42s;
+ }
+ .navber a:hover{
+    border-bottom: 2px solid #003459;
+ }
+ .nav-btn{
+    display: flex;
+    align-items: center;
+ }
+
+ #menu-icon{
+    font-size: 35px;
+    color: #003459;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+ }
+ .icon i{
+    color: #224f34;
+    font-size: 32px;
+    margin: 0px 15px;
+ }
+ .nav-btn .btn{
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 2px solid #003459;
+    background-color: #003459;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all .42s;
+ }
+ .nav-btn .btn:hover{
+ color: #003459;
+ background-color: transparent;
+ }
+ section{
+    padding: 80px 10%;
+ }
+ .home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Herro\ Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+gap: 2rem;
+ }
+
+ .home-img img{
+   max-width: 100%;
+   width: 750px;
+   height: auto;
+ }
+
+ .home-text h5{
+   color: #000;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 15px;
+ }
+ .home-text h1{
+   width: 130%;
+   color: #000;
+   font-size: 65px;
+   line-height: 90px;
+   font-size: 700;
+   text-transform: uppercase;
+ }
+
+ .home-text h4{
+   color: #191818;
+   font-size: 20px;
+   font-weight: 500;
+   text-transform: inherit;
+   margin: 20px 0px 40px 0px;
+ }
+ .hm-btn{
+   display: inline-block;
+   font-size: 17px;
+   color: #fff;
+   font-weight: 500;
+   text-transform: capitalize;
+   border: 2px solid #000;
+   padding: 10px 25px;
+   background-color: #000;
+   border-radius: 10px;
+   transition: all .42s;
+}
+.hm-btn:hover{
+   background-color: transparent;
+   color: #000;
+}
+
+.Arrivals{
+   background-color: #FCEED5;
+}
+.arriv-top{
+   color: #000;
+   font-size: 36px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 80px;
+}
+
+.main-ariv{
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+   gap: 3rem;
+}
+.arriv-img{
+   overflow: hidden;
+}
+.arriv-img img{
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+   display: block;
+   cursor: pointer;
+   transition: all .42s;
+}
+.arriv-img:hover img{
+   transform: scale(1.1);
+}
+.arriv-text{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.arriv-text h4{
+   color: #191818;
+   font-size: 18px;
+   text-transform: capitalize;
+   font-weight: 500;
+   margin-top: 10px;
+}
+.arriv-text p{
+   color: #7f7f7f;
+   font-size: 16px;
+   font-weight:500 ;
+   text-transform: capitalize;
+}
+.arriv-icon i{
+   font-size: 35px;
+   color: #7f7f7f;
+   transition: all .42s;
+}
+.arriv-icon i:hover{
+   transform: translateX(5px);
+}
+.arriv-btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 55px;
+}
+.arriv-btn i{
+   color: #224f34;
+   font-size: 25px;
+   margin-left: 5px;
+   transition: all .42s;
+}
+.arrb{
+   display: flex;
+   color: #224f34;
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: inherit;
+   border: 2px solid #224f34;
+   border-radius: 30px;
+   padding: 10px 30px 7px 30px;
+   transition: all .42s;
+}
+.arrb:hover{
+   color: #fff;
+   background-color: #224f34;
+}
+.arrb:hover i{
+   color: #fff;
+   transform: translateX(5px);
+}
+.product{
+   background-color:white;
+}
+.product h2{
+   color: #000;
+   font-size: 40px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 40px;
+}
+.pro-lidt{
+   text-align: center;
+   margin-bottom: 70px;
+}
+.pro-lidt a{
+   color: #000;
+   font-size: 18px;
+   font-weight: 500;
+   margin: 0px 20px;
+   text-transform: uppercase;
+   padding: 3px 0;
+   border-bottom: 2px solid transparent;
+   transition: all .42s;
+}
+.pro-lidt #hot{
+   border-bottom: 2px solid #000;
+   transition: all .42s;
+}
+.pro-lidt a:hover{
+   border-bottom: 2px solid #000;
+}
+.main-product{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   gap: 3rem;
+}
+.pro-img{
+   overflow: hidden;
+}
+.row img{
+   max-width: 100%;
+   width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all .42s;
+}
+.row img:hover{
+   transform: scale(1.1);
+   border-radius: 46px;
+}
+.pri-ratting{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.pro-text h4{
+   color: #000;
+   font-size: 18px;
+   text-transform: capitalize;
+   font-weight: 500;
+   margin: 10px 0px 4px 0px;
+}
+.pro-price{
+   color: #454545;
+   font-size: 20px;
+   font-weight: 400;
+}
+.ratting h6{
+   color: #454545;
+   font-size: 16px;
+   font-weight: 400;
+}
+.ratting i{
+   color: #f5d426;
+}
+.offer{
+   width: 100%;
+   height: 100%;
+   background-image: url(img/offer-back.png);
+   background-position: center;
+   background-size: cover;
+}
+.main-offer{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 2rem;
+}
+.offer-img img{
+   max-width: 100%;
+   width: 500px;
+   height: auto;
+}
+.offer-text h2{
+   color: #224f34;
+   font-size: 45px;
+   font-weight: 600;
+   text-transform: inherit;
+   margin-bottom: 20px;
+}
+.offer-text p{
+   max-width: 500px;
+   color: #224f34;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 30px;
+   margin-bottom: 30px;
+}
+.offer-days{
+   text-align: center;
+}
+.days-info{
+   display: inline-block;
+   margin-right: 25px;
+   background-color: #FCEED5;
+   padding: 20px 15px 20px 20px;
+   margin-bottom: 50px;
+   cursor: pointer;
+   transition: all .42s;
+}
+.days-info:hover{
+   transform: translateY(-20px);
+}
+.days-info h5{
+   color: #000;
+   font-size: 30px;
+}
+.days-info h6{
+   color: #000;
+   font-size: 16px;
+   text-transform: capitalize;
+}
+.offer-btn{
+   text-align: center;
+}
+.offer-btn a{
+   display: inline-block;
+   color: #fff;
+   font-size: 16px;
+   text-transform: uppercase;
+   font-weight: 500;
+   border: 2px solid #000;
+   background-color: #000;
+   padding: 10px 30px;
+   border-radius: 30px;
+   transition: all .42s;
+}
+.offer-btn a:hover{
+   background-color: transparent;
+   color: #000;
+}
+ .trending-product{
+   background-color: #FCEED5;
+ }
+ .trend-text h2{
+color: #000;
+font-size: 36px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+margin: 50px 0px 100px 10px;
+ }
+ .testimonial{
+   background-color: #FCEED5;
+ }
+ .test-top{
+   color: #000;
+   font-size: 36px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 80px;
+ }
+ .main-test{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+   gap: 2rem;
+   margin-bottom: 80px;
+ }
+ .testmon-1{
+   background-color: #fff;
+   padding: 25px 20px;
+   border-radius: 10px;
+   box-shadow:0px 7px 29px 0px rgba(100,100,111,0.2);
+   cursor: pointer;
+   transition: all .42s;
+ }
+ .testmon-1 i{
+   color: #000;
+   font-size: 35px;
+   margin-left: 20px;
+ }
+ .testmon-1 h4{
+   color: #000;
+   font-size: 20px;
+   font-weight: 700;
+   text-transform: capitalize;
+   margin: 10px 20px;
+ }
+ .testmon-1 p{
+   max-width: 450px;
+   color: #6f6f6f;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 26px;
+ }
+ #idtest{
+   background:#f7dba7 ;
+ }
+ .testmon-1:hover{
+   background: #f7dba7;
+ }
+ .contact{
+   background-color: #000;
+   height: 40%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+   gap: 1rem;
+ }
+ .cont-info-2 h4{
+   color: #fff;
+   font-size: 18px;
+   text-transform: uppercase;
+   font-weight: 600;
+   margin-bottom: 20px;
+ }
+ .cont-info-2 a{
+   display: flex;
+   color: #797979;
+   font-size: 18px;
+   text-transform: capitalize;
+   font-weight: 500;
+   margin: 15px 0px;
+   transition: all .42s;
+ }
+ .cont-info-2 a:hover{
+   color: #fff;
+ }
+ .cont-info-1 img{
+   max-width: 100%;
+   width: 150px;
+   height: auto;
+   margin-bottom: 40px;
+ }
+ .cont-icon i{
+  color: #fff;
+  font-size: 30px;
+  margin-right: 20px;
+  transition: all .42s;
+ }
+ .cont-icon i:hover{
+   color: #f7dba7;
+   transform: translateY(-5px);
+ }
+ .cont-info-2 input{
+   color: #fff;
+   width: 100%;
+   height: 50px;
+   padding: 20px;
+   outline: none;
+   caret-color: #fff;
+   background: transparent;
+   border: 2px solid #f7dba7;
+ }
+ .cont-info-2 input::placeholder{
+   color: #fff;
+   font-size: 16px;
+ }
+ .cont-info-2 button{
+   color: #224f34;
+   font-size: 15px;
+   text-transform: uppercase;
+   font-weight: 500;
+   padding: 10px 30px;
+   background-color: #f7dba7;
+   border: 2px solid #f7dba7;
+   margin-top: 50px;
+   cursor: pointer;
+ }
+ .footer{
+   position: relative;
+   background-color: #000;
+ }
+ .main-footer{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   padding:20px 10% ;
+ }
+ .fo-right i{
+   color: #000;
+   font-size: 35px;
+   width: 50px;
+   height: 50px;
+   background: #f7dba7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 30px;
+   transition: all .42s;
+
+ }
+ .fo-right i:hover{
+   transform: translateY(-5px);
+ }
+
+ .fo-text a{
+color: #fff;
+font-size: 17px;
+text-transform: capitalize;
+font-weight: 500;
+margin-right: 20px;
+ }
+
+ @media(max-width:1470px){
+   header{
+      padding: 30px 4%;
+
+      transition: .3s;
+   }
+ }
